@@ -21,7 +21,7 @@ fn decrypt_file(filename: &Path) -> io::Result<()> {
 }
 
 fn main() {
-    let filename = Path::new("C:/Users/win10/Documents/vault/imgs/1710421248768.bin");
+    let filename = Path::new( /* file path here */ );
     //let filename = "C:/Users/win10/Documents/vault/imgs/1710421248768.bin";
     match decrypt_file(filename) {
         Ok(bytes) => println!("{:?}", bytes),
